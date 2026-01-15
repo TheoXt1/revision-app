@@ -1,0 +1,14 @@
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
+
+/* Styles pour cacher la barre de défilement tout en gardant le scroll */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/* Safe area pour iPhone X et + */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
